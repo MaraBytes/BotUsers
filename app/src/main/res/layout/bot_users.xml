@@ -1,0 +1,122 @@
+<!-- res/layout/item_layout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/laymain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_lay"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textExpiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="20th Nov"
+                android:textColor="#DF1616"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- Installed Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Installed:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textInstalledDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="20th Nov"
+                android:textColor="#95003898"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAC:"
+                android:textColor="@color/black" />
+
+            <!-- MAC Address -->
+            <TextView
+                android:id="@+id/textMacAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="20th Nov"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days Remaining"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/reset15th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET TO 20TH" />
+
+        <Button
+            android:id="@+id/reset5th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET TO 5TH" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtexpired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:rotation="-45"
+        android:text="EXPIRED"
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>
